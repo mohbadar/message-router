@@ -27,5 +27,15 @@ public class EndpointService {
         return  endpointRepository.getOne(id);
     }
 
+    public Endpoint findByHost(String host)
+    {
+        return  endpointRepository.findByHost(host);
+    }
+
+    public Endpoint findByDestination(String destination)
+    {
+        return  endpointRepository.findByDestination(destination);
+    }
+
 
 }

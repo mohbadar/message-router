@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EndpointRepository extends JpaRepository<Endpoint, Long> {
+    public Endpoint findByHost(String host);
+    public Endpoint findByDestination(String destination);
 }
