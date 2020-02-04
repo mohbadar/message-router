@@ -25,7 +25,7 @@ public class Endpoint {
 
     private String host;
 
-    private String port;
+    private int port;
 
     private String destination;
 }
