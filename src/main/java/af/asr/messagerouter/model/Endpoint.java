@@ -28,4 +28,6 @@ public class Endpoint {
     private int port;
 
     private String destination;
+
+    private String topic;
 }

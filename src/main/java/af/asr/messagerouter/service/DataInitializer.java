@@ -20,7 +20,7 @@ public class DataInitializer {
 
     private void createEndpointIfNotExist(){
         if (endpointService.findall().size() < 1){
-            Endpoint endpoint = Endpoint.builder().destination("dest_1").host("127.0.0.1").port(4000).build();
+            Endpoint endpoint = Endpoint.builder().destination("dest_1").host("127.0.0.1").port(4000).topic("topic_1").build();
             endpointService.save(endpoint);
         }
     }
